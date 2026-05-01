@@ -346,12 +346,16 @@ a[target="_blank"] {
   }
 
   #list-interests {
-    flex-direction: column;
     flex-wrap: wrap;
-    gap: 0.5rem;
+    justify-content: center;
+    gap: 1rem;
   }
-
+ 
   #about-me {
     width: 100%;
   }
+}
+
+* {
+  box-sizing: border-box;
 }
