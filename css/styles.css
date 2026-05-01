@@ -306,7 +306,6 @@ article h2::after {
   gap: 1rem;
   margin: 0;
   pad: 0;
-  text-align: justify;
 }
 
 
@@ -361,7 +360,6 @@ a[target="_blank"] {
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
-    text-align: justify;
   }
  
   #about-me {
