@@ -199,10 +199,13 @@ hr {
 #about-me {
   display: flex;
   flex-direction: column;
-  align-items:center;
+  align-items: center;
   gap: 1rem;
+  padding: 1rem 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
   background-color: rgb(224, 214, 203);
-  padding: 1rem;
   border-radius: 6px;
   border: 2px solid gray;
   width: 100%;
@@ -302,6 +305,7 @@ article h2::after {
   justify-content: center;
   gap: 1rem;
   margin: 0;
+  pad: 0;
 }
 
 
