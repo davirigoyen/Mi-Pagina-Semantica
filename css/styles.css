@@ -1,3 +1,15 @@
+/* =========================================
+   1. VARIABLES Y ESTILOS GLOBALES
+   ========================================= */
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  background-color: #5b93fb;
+  color: black;
+}
+
 body {
   font-family: system-ui, Arial, sans-serif;
   margin: 0;
@@ -5,6 +17,119 @@ body {
   background-color: #f0f4f8;
 }
 
+/* =========================================
+   2. TIPOGRAFÍA Y ELEMENTOS BASE
+   ========================================= */
+h1, h2, h3 {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  margin: 0.5rem auto 0;
+  padding: 2% 2%;
+  border: 5px solid rgb(92, 69, 69);
+  border-radius: 10px;
+  background-color: rgb(224, 214, 203);
+  font-size: 2rem;
+  font-weight: bold;
+  transition: 0.4s;
+}
+
+h1:hover {
+  transform: scale(1.15);
+  text-decoration: underline;
+}
+
+h2 { font-size: 1.5rem; font-weight: bold; }
+h3 { font-size: 1.25rem; font-weight: bold; }
+h4 { font-size: 1.1rem; font-weight: bold; }
+
+h2:hover, h3:hover, h4:hover, a:hover {
+  color: rgb(179, 86, 86);
+}
+
+p {
+  padding: 10px;
+  margin: 10px;
+}
+
+p + p {
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+p::first-line {
+  font-size: 110%;
+  font-weight: bold;
+}
+
+.font-p {
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+}
+
+p .font-lighter {
+  font-weight: normal;
+}
+
+a:link { color: #5a5e66; }
+a:visited { color: rgb(47, 61, 61); }
+a[target="_blank"] { color: rgb(179, 86, 86); }
+
+hr {
+  width: 100%;
+  height: 0.01rem;
+  border: none;
+  border-top: 1.9px solid #232629;
+  margin: 20px 0;
+}
+
+.bold { font-weight: bold; }
+.bold ~ p { font-weight: bold; }
+
+/* =========================================
+   3. LAYOUT PRINCIPAL Y COMPONENTES
+   ========================================= */
+
+/* --- HEADER --- */
+#header-id {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 12px;
+  background-color: rgb(196, 172, 142);
+  color: #7c5d5d;
+  border-radius: 3px;
+  border: 3px solid rgb(165, 146, 146);
+  text-align: center;
+}
+
+header h3 {
+  font-weight: 500;
+  font-style: italic;
+}
+
+#subtitle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 3rem;
+}
+
+.icon {
+  width: 95px;
+  height: 60px;
+}
+
+/* --- NAVEGACIÓN (Soluciones Puntos 2 y 3) --- */
 nav {
   padding: 16px;
   margin-bottom: 12px;
@@ -13,46 +138,23 @@ nav {
   background-color: rgb(224, 214, 203);
 }
 
-p {
-  padding: 10px;
-  margin: 10px;
-}
-
-footer {
-  display: block;
-  padding: 16px;
-  margin-bottom: 12px;
-  background-color:rgb(196, 172, 142);
-  text-align: center;
-  color: #7c5d5d;
-  font-size: 0.95rem;
-  font-weight: bold;
-}
-
-
-#header-id {
-  display: flex;
-  flex-direction: column;
-  align-items: center ;
-  padding: 10px;
-  margin-bottom: 12px;
-  background-color:rgb(196, 172, 142);
-  color: #7c5d5d;
-  border-radius: 3px;
-  border: 3px solid rgb(165, 146, 146);
-  text-align: center;
-}
-
 nav ul {
   list-style: none;
   display: flex;
-  gap: 16px;
-  justify-content: center;
+  justify-content: space-evenly; /* Distribuye el espacio equitativamente */
+  align-items: center;
+  width: 100%;
   padding: 0;
   margin: 0;
 }
 
+nav li.button {
+  flex: 1; /* Le da el mismo ancho a cada ítem */
+  text-align: center; /* Centra/Justifica el string dentro de su propia caja */
+}
+
 nav a {
+  display: block; /* Permite que el enlace ocupe todo el espacio del <li> */
   text-decoration: none;
   font-weight: bold;
 }
@@ -61,6 +163,7 @@ nav a:hover {
   text-decoration: underline;
 }
 
+/* --- CONTENEDOR PRINCIPAL (MAIN) --- */
 main {
   display: flex;
   gap: 40px;
@@ -70,18 +173,88 @@ main {
   background: #f0f4f8;
 }
 
+/* --- ARTICLE: About Me --- */
 article {
   flex: 2;
   background-color: #f0f4f8;
 }
+
+#about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1rem 2rem;
+  background-color: rgb(224, 214, 203);
+  border-radius: 6px;
+  border: 2px solid gray;
+  width: 100%;
+}
+
+#article-title {
+  transition: 0.4s;
+}
+
+#article-title:hover {
+  font-style: italic;
+}
+
+article h2::after {
+  content: "💼";
+  margin-left: 10px;
+}
+
+#foto-perfil {
+  display: block;
+  width: 120px;
+  height: auto;
+  margin: 0 auto;
+  transition: 0.4s;
+}
+
+#foto-perfil:hover {
+  transform: scale(1.15);
+  border: 2px solid gray;
+}
+
+#paragraph {
+  margin: 0.3rem;
+  line-height: 1.30;
+}
+
+article p {
+  color: darkslategray;
+}
+
+#interests-and-hobbies {
+  margin-top: 2px;
+}
+
+#list-interests {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* --- ASIDE: Enlaces Útiles --- */
 aside {
   flex: 1;
-  background-color: #f0f4f8;
-  border-radius: 8px;
-  padding: 16px;
+  background-color: rgb(224, 214, 203);
   border-radius: 10px;
+  padding: 16px;
   border: 2px solid rgb(165, 146, 146);
   vertical-align: middle;
+}
+
+#enlaces-utiles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0px;
+  font-size: small;
 }
 
 aside input[type="image"] {
@@ -89,55 +262,6 @@ aside input[type="image"] {
   margin: 0 auto;
   margin-top: 40px;
   cursor: pointer;
-}
-
-
-
-h1 {
-  display: flex;
-  border: 5px solid rgb(92, 69, 69);
-  width: fit-content;
-  margin: 0 auto;
-  margin-top: 0.5rem;
-  text-align: center;
-  justify-content: center;
-  border-radius: 10px;
-  padding: 2% 2%;
-  background-color: rgb(224, 214, 203);
-  transition: 0.4s;
-  font-size: 2rem;
-  font-weight: bold;
-}
-
-h1:hover {
-  transform: scale(1.15);
-  text-decoration: underline;
-}
-
-#hombreTrabajandoEnPc {
-  display: block;
-  width: 4rem;
-  height: 4rem;
-  margin: 0 auto;
-  transition: 0.4s ease;
-}
-
-
-#hombreTrabajandoEnPc:hover {
-    transform: scale(1.15);
-}
-
-::selection {
-  background-color: #5b93fb;
-  color: black;
-}
-
-a:link {
-  color: #5a5e66;
-}
-
-a:visited {
-  color: rgb(47, 61, 61);
 }
 
 #enlaces-title {
@@ -151,213 +275,73 @@ a:visited {
 }
 
 #enlaces-title::before {
-  content:"📌";
-}
-
-hr {
-  width: 100%;
-  height: 0.01rem;
-  border: none;
-  border-top: 1.9px solid #232629;
-  margin: 20px 0;
+  content: "📌";
 }
 
 #list-margin {
   margin-top: 2rem;
-  margin-left: 2rem;
-  margin-bottom: 2rem; 
-}
-
-#subtitle {
-  display: inline-flex;
-  align-items:center;
-  justify-content: center;
-  gap: 10px;
-  margin-bottom: 3rem;
-}
-
-.icon {
-  width: 95px;
-  height: 60px;
-}
-
-
-#foto-perfil {
-  display:block;
-  width: 120px;    
-  height: auto;
-  margin: 0 auto;
-  transition: 0.4s;
-}
-
-#foto-perfil:hover {
-  transform: scale(1.15);
-  border: 2px solid gray;
-}
-
-
-#about-me {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-  padding: 1rem 1rem 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items:center;
-  background-color: rgb(224, 214, 203);
-  border-radius: 6px;
-  border: 2px solid gray;
-  width: 100%;
-  box-sizing: border-box;
+  margin-left: 0; /* Removido el margin-left: 2rem para que las bullets se centren mejor */
+  margin-bottom: 2rem;
+  padding-left: 1rem; 
 }
 
 .visitar-sitio::after {
-  content:"↗";
-
+  content: "↗";
 }
 
-p + p {
-  font-size: 18px;
-  font-weight: bolder;
+#hombreTrabajandoEnPc {
+  display: block;
+  width: 4rem;
+  height: 4rem;
+  margin: 0 auto;
+  transition: 0.4s ease;
 }
 
-p .font-lighter {
-  font-weight: normal;
+#hombreTrabajandoEnPc:hover {
+  transform: scale(1.15);
 }
 
-.font-p {
-  font-weight: bolder;
-  display: flex;
-  justify-content: center;
-}
-
-p::first-line {
-  font-size: 110%;
-  font-weight: bold;
-}
-
-article p {
-  color:darkslategray;
-}
-
-h1, h2, h3
- {
+/* --- FOOTER --- */
+footer {
+  display: block;
+  padding: 16px;
+  margin-bottom: 12px;
+  background-color: rgb(196, 172, 142);
   text-align: center;
-  margin: 1rem 0;
- }
-
-
-
-h2 {
-  font-size: 1.5rem;
+  color: #7c5d5d;
+  font-size: 0.95rem;
   font-weight: bold;
-}
-
-h3 {
-  font-size: 1.25rem;
-  font-weight: bold;
-}
-
-h4 {
-  font-size: 1.1rem;
-  font-weight: bold;
-}
-
-
-h2:hover, 
-h3:hover,
-h4:hover,
-a:hover {
-  color: rgb(179, 86, 86);
-}
-
-.bold {
-  font-weight: bold;
-
-}
-
-header h3 {
-  font-weight:500;
-  font-style: italic;
-}
-
-.bold ~ p {
-  font-weight: bold;
-}
-
-#interests-and-hobbies {
-  margin-top: 2px;
-}
-
-article h2 {
-  text-align: center;
-}
-
-article h2::after {
-  content: "💼";
-  margin-left: 10px;
-}
-
-#list-interests {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
-  margin: 0;
-  pad: 0;
-}
-
-
-#enlaces-utiles {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0px;
-  margin-top: 0px ;
-  background-color: rgb(224, 214, 203);
-  border: 2px solid gray;
-  font-size: small;
-}
-
-#article-title {
-    transition: 0.4s;
-}
-
-#article-title:hover {
-  font-style: italic;
-}
-
-#paragraph {
-  margin: 0.3rem;
-  line-height: 1.30;
 }
 
 footer h2 {
   display: flex;
   justify-content: center;
+  align-items: center;
   font-weight: bolder;
   padding: 0.5rem;
-  align-items: center;
 }
 
-a[target="_blank"] {
-  color: rgb(179, 86, 86);
-}
-
+/* =========================================
+   4. MEDIA QUERIES (RESPONSIVE)
+   ========================================= */
 @media (max-width: 768px) {
   main {
     flex-direction: column;
     gap: 20px;
   }
 
+  /* Modificado para mantener space-evenly en celular */
   nav ul {
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap; /* Permite que los botones salten de línea si no caben en una sola */
+    gap: 10px;
+  }
+
+  nav li.button {
+    flex: 1 1 40%; /* Cada botón tomará al menos el 40% del ancho, creando 2 columnas limpias */
+    padding: 5px 0;
   }
 
   #list-interests {
-    flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
   }
@@ -365,8 +349,4 @@ a[target="_blank"] {
   #about-me {
     width: 100%;
   }
-}
-
-* {
-  box-sizing: border-box;
 }
