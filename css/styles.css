@@ -227,6 +227,12 @@ article p {
   color: darkslategray;
 }
 
+#paragraph::first-letter {
+  font-size: 150%;
+  font-weight: bold;
+  margin-right: 0px;
+}
+
 #interests-and-hobbies {
   margin-top: 2px;
 }
