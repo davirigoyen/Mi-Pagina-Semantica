@@ -30,7 +30,7 @@ h1 {
   justify-content: center;
   align-items: center;
   width: fit-content;
-  margin: 0.5rem auto 0;
+  margin: 0.5rem;
   padding: 2% 2%;
   border: 5px solid rgb(92, 69, 69);
   border-radius: 10px;
@@ -87,7 +87,7 @@ hr {
   height: 0.01rem;
   border: none;
   border-top: 1.9px solid #232629;
-  margin: 20px 0;
+  margin: 0.5rem;
 }
 
 .bold { font-weight: bold; }
@@ -121,8 +121,8 @@ header h3 {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  margin-bottom: 3rem;
-  font-size:x-large;
+  margin: 1.5rem;
+  font-size: x-large; 
 }
 
 .icon {
@@ -133,7 +133,7 @@ header h3 {
 /* --- NAVEGACIÓN (Soluciones Puntos 2 y 3) --- */
 nav {
   padding: 16px;
-  margin-bottom: 12px;
+  margin: 0.5rem;
   border-radius: 3px;
   border: 2px solid gray;
   background-color: rgb(224, 214, 203);
@@ -193,6 +193,8 @@ article {
 }
 
 #article-title {
+  margin: 0.8rem;
+  padding: 0.3rem;
   transition: 0.4s;
 }
 
@@ -207,9 +209,10 @@ article h2::after {
 
 #foto-perfil {
   display: block;
-  width: 120px;
-  height: auto;
-  margin: 0 auto;
+  padding: 0.5rem;
+  width: 7rem;
+  height: 7rem;
+  margin: 1rem;
   transition: 0.4s;
 }
 
@@ -242,7 +245,8 @@ article h2::after {
 }
 
 #interests-and-hobbies {
-  margin-top: 2px;
+  margin: 1rem;
+  padding: 0.3rem;
   text-decoration: underline;
 }
 
@@ -255,8 +259,8 @@ article h2::after {
   flex-wrap: wrap;
   justify-content: space-evenly;
   width: 100%;
-  margin: 0;
-  padding: 0;
+  margin: 0.5rem;
+  padding: 0.2rem;
   font-weight: bolder;
 }
 
@@ -287,8 +291,8 @@ aside input[type="image"] {
 
 #enlaces-title {
   transition: 0.5s;
-  margin-top: 1rem;
-  margin-bottom: 2rem;
+  margin:0.7rem;
+  padding: 0.3rem;
 }
 
 #enlaces-title:hover {
@@ -299,11 +303,9 @@ aside input[type="image"] {
   content: "📌";
 }
 
-#list-margin {
-  margin-top: 2rem;
-  margin-left: 0; /* Removido el margin-left: 2rem para que las bullets se centren mejor */
-  margin-bottom: 2rem;
-  padding-left: 1rem; 
+#list-external-links {
+  margin: 1rem;
+  padding:0.5rem; 
 }
 
 .visitar-sitio::after {
@@ -314,10 +316,9 @@ aside input[type="image"] {
   display: block;
   width: 8rem;
   height: 8rem;
-  margin: 0 auto;
+  margin: 2rem;
+  padding: 0.6rem;
   transition: 0.4s ease;
-  margin-top: 4rem;
-  margin-bottom: 2rem;
 }
 
 #hombreTrabajandoEnPc:hover {
@@ -342,6 +343,12 @@ footer h2 {
   align-items: center;
   font-weight: bolder;
   padding: 0.5rem;
+  margin: 0.8rem;
+}
+
+#small {
+  margin: 0.2rem;
+  padding: 0.2rem;
 }
 
 /* =========================================
