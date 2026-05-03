@@ -113,26 +113,27 @@ header {
 
 #subtitle {
   display: block;
-  gap: 10px;
-  margin-top: 3rem;
-  margin-bottom: 0rem;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
   font-size: x-large;
+  line-height: 1.2;
   font-weight: 500;
   font-style: italic;
   transition: 1s; 
 }
 
+
 #subtitle::after {
   content: ""; 
   display: inline-block;
-  width: 105px; 
-  height: 105px;
+  width: 90px; 
+  height: 90px;
   background-image: url("../img/pc-img.png"); 
   background-size: contain; 
   background-repeat: no-repeat;
   background-position: center; 
-  margin-left: 10px; 
-  vertical-align: text-top;
+  margin-left: 15px;
+  vertical-align: middle;
   transition: 1.8s;
 }
 
@@ -442,10 +443,10 @@ footer p {
   }
 
  #subtitle::after {
-    display: block;            
-    width: 105px;    
-    height: 105px;   
-    margin: 15px auto 0 auto;  
+    display: block;           
+    margin: 15px auto 0 auto; 
+    width: 105px;
+    height: 105px;
   }
 
   /* 4. Navegación: Botones en bloque (apilados) */
