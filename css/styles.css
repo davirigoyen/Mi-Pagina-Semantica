@@ -487,7 +487,7 @@ footer p a {
 
  #subtitle::after {
     display: block;           
-    margin: 7px auto 0 auto; 
+    margin: 0 auto 0 auto; 
     width: 105px;
     height: 105px;
   }
