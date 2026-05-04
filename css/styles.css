@@ -34,10 +34,10 @@ h1 {
   margin: 0 auto;
   margin-top: 0.5rem;
   padding: 2% 2%;
-  border: 5px solid hsla(40, 60%, 0%, 0.2);
-  border-radius: 8px;
+  border: 3px solid hsla(40, 60%, 0%, 0.3);
+  border-radius: 6px;
   background-color: hsla(40, 45%, 65%, 0.4);
-  font-size: 300%;
+  font-size: 260%;
   font-weight: bold;
   transition: 1.3s;
   color: hsla(40, 40%, 45%, 1);
@@ -45,7 +45,8 @@ h1 {
 
 h1:hover {
   transform: scale(1.07);
-  text-decoration: underline;
+  text-decoration:underline;
+  text-decoration-thickness: 2px;
 }
 
 h2 { font-size: 1.5rem; font-weight: bold; }
@@ -208,7 +209,7 @@ main {
   min-height: 450px;
   background-color: hsla(40, 45%, 65%, 0.4);
   border-radius: 3px;
-  border: 2px solid gray;
+  border: 2px solid hsla(45, 20%, 40%, 1);
   padding: 1rem;
   box-sizing: border-box;
 }
