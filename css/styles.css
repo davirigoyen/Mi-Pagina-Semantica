@@ -477,6 +477,7 @@ footer p a {
   header {
     width: 100%;
     height: auto;
+    padding-bottom: 0;
   }
   
   
