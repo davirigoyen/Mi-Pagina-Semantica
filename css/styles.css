@@ -455,7 +455,7 @@ footer p a {
   /* 1. Main y contenedor general */
   main {
     height: auto; 
-    padding: 15px 5px;
+    padding: 10px 5px;
   }
 
   /* 2. Article y Aside */
@@ -474,6 +474,11 @@ footer p a {
   }
 
   /* 3. Encabezado y Subtítulo */
+  header {
+    height: auto;
+  }
+  
+  
   h1 {
     font-size: 2rem;
     width: 80%;
@@ -483,6 +488,8 @@ footer p a {
   #subtitle {
     font-size: 1.2rem;
     margin-top: 1.5rem;
+    line-height: 1;
+    padding-bottom: 0;
   }
 
  #subtitle::after {
