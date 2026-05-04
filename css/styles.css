@@ -455,7 +455,7 @@ footer p a {
   main {
     width: 100%;
     height: auto; 
-    padding: 5px 5px;
+    padding: 5px 0px;
     margin: 0; 
   }
 
@@ -473,6 +473,7 @@ footer p a {
     min-height: auto;
     margin-top: 10px;
     margin: 0 auto;
+    padding: 0;
   }
 
   #foto-perfil {
