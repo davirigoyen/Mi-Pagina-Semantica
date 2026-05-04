@@ -535,13 +535,23 @@ footer p a {
   /* 5. Sección de Intereses */
   #interests-section {
     width: 100%;
-    padding: 1rem 0;
+    padding: 15px 0; /* Reducimos el padding vertical para ajustar la caja */
+  }
+
+  #interests-section h3 {
+    display: block; /* Problema 1: Fuerza el salto de línea para que el título quede arriba */
+    margin: 0 auto 15px auto; /* Empuja la lista hacia abajo */
+  }
+
+  #interests-section ul {
+    display: block; /* Asegura que el contenedor de la lista ocupe la línea inferior */
   }
 
   #interests-section li {
-    display: block;         
-    margin: 15px auto;
+    display: inline-block; /* Problema 1: Renderiza los elementos de la lista en formato horizontal */
+    margin: 5px 10px; /* Problema 2: Reducimos este margen para que no genere tanto espacio en blanco abajo */
   }
+
 
   /* 6. Textos: Mejor legibilidad */
   #paragraph, #paragraph2 {
