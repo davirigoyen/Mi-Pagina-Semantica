@@ -466,6 +466,12 @@ footer p a {
     margin: 15px 0;     
   }
 
+  #foto-perfil {
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+  }
+
   /* 3. Encabezado y Subtítulo */
   h1 {
     font-size: 2rem;
