@@ -16,7 +16,7 @@ body {
   font-family: system-ui, Arial, sans-serif;
   margin: 0;           
   padding: 26px;       
-  background-color: hsla(20, 25%, 60%, 0.20);
+  background-color: hsla(21, 27%, 73%, 0.2);
 }
 
 /* =========================================
@@ -35,7 +35,7 @@ h1 {
   padding: 2% 2%;
   border: 3px solid hsla(40, 60%, 0%, 0.3);
   border-radius: 6px;
-  background-color: hsla(40, 45%, 65%, 0.4);
+  background-color: hsla(40, 50%, 50%, 0.3);
   font-size: 260%;
   font-weight:600;
   transition: 1.3s;
@@ -251,6 +251,7 @@ article h2::after {
   border: 2px solid hsla(45, 20%, 40%, 1);
   border-radius: 4px;
   transition: 1s;
+  opacity: 0.85;
 }
 
 #foto-perfil:hover {
