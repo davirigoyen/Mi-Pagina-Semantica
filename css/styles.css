@@ -459,12 +459,18 @@ footer p a {
   }
 
   /* 2. Article y Aside */
-  #about-me-article, 
-  aside {
+  #about-me-article {
     display: block;      
     width: 100%;        
     min-height: auto;   
     margin: 0;     
+  }
+
+  aside {
+    display: block;      
+    width: 100%;        
+    min-height: auto;
+    margin-top: 10px;
   }
 
   #foto-perfil {
