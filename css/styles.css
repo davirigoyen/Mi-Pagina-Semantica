@@ -311,6 +311,17 @@ article h2::after {
   font-weight: 600;
 }
 
+#music::before {
+  content: "🎶 ";
+}
+
+#programming::before {
+  content: "💻 ";
+}
+
+#exersice::before {
+  content: "🚴 ";
+}
 
 
 /* --- ASIDE: Enlaces Útiles --- */
