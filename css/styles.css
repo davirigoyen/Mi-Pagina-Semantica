@@ -350,7 +350,7 @@ aside {
   vertical-align: top; 
   width: 26%; 
   height: auto;
-  min-height: 450px; 
+  min-height: 462px; 
   margin-left: 8px;
   background-color: rgb(224, 214, 203);
   border-radius: 3px;
@@ -454,8 +454,10 @@ footer p a {
   
   /* 1. Main y contenedor general */
   main {
+    width: 100%;
     height: auto; 
     padding: 5px 5px;
+    margin: 0; 
   }
 
   /* 2. Article y Aside */
