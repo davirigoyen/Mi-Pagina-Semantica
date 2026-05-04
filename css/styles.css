@@ -291,7 +291,7 @@ article h2::after {
   margin: 0 auto;
   border: 2px solid hsla(45, 20%, 40%, 1);
   padding: 10px 10px 30px;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
   box-sizing: border-box;
   text-align: center;
 }
@@ -351,10 +351,9 @@ aside {
   width: 26%; 
   height: auto;
   min-height: 462px; 
-  margin-left: 8px;
   background-color: rgb(224, 214, 203);
   border-radius: 3px;
-  padding: 16px;
+  padding: 16px 16px 16px 21px ;
   border: 2px solid hsla(45, 20%, 40%, 1);
   font-size: small;
   box-sizing: border-box;
@@ -473,6 +472,7 @@ footer p a {
     width: 100%;        
     min-height: auto;
     margin-top: 10px;
+    margin: 0 auto;
   }
 
   #foto-perfil {
@@ -504,7 +504,7 @@ footer p a {
 
  #subtitle::after {
     display: block;           
-    margin: 0 auto 0 auto; 
+    margin: 0 auto; 
     width: 105px;
     height: 105px;
   }
@@ -512,7 +512,7 @@ footer p a {
   /* 4. Navegación: Botones en bloque (apilados) */
   nav {
     width: 100%;
-    padding: 1rem 0;
+    padding: 1rem 0rem;
   }
 
   .button {
@@ -527,7 +527,7 @@ footer p a {
   /* 5. Sección de Intereses */
   #interests-section {
     width: 100%;
-    padding: 1rem 0.5rem;
+    padding: 1rem 0rem;
   }
 
   #interests-section li {
