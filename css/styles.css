@@ -469,7 +469,8 @@ footer p a {
   /* 3. Encabezado y Subtítulo */
   h1 {
     font-size: 2rem;
-    width: 100%;
+    width: 80%;
+    border: 1px solid hsla(40, 60%, 0%, 0.3);
   }
 
   #subtitle {
