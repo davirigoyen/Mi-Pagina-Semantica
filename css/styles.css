@@ -485,6 +485,11 @@ footer p a {
     padding-top: 16px; /* Restaurado para que el borde no asfixie el contenido */
   }
 
+  aside h2 {
+    margin-top: 8px;
+    padding-top: 8px;
+  }
+
   #foto-perfil {
     width: 30%;
     height: auto;
@@ -496,7 +501,7 @@ footer p a {
     width: 100%;
     height: auto;
     max-height: fit-content;
-    padding-bottom: 1rem; /* Restaurado para mantener simetría interna del borde */
+    padding-bottom: 0; /* Restaurado para mantener simetría interna del borde */
   }
   
   h1 {
@@ -552,10 +557,10 @@ footer p a {
   }
 
   #interests-section li {
-    display: inline-block; 
-    margin: 5px 2px;
-    font-size: 1px; 
-  }
+  display: inline-block; 
+  margin: 5px 5px;   /* Un poco más de aire entre palabras */
+  font-size: 13px;   /* Pequeño, pero legible */
+}
 
   /* Ajuste para el HR intermedio */
   main + hr, 
@@ -569,5 +574,19 @@ footer p a {
     font-size: 1rem;
     padding-left: 0;
     padding-right: 0;
+  }
+
+  /* 7. Footer */
+
+  footer h2 {
+    font-size: 18px;
+  }
+
+  footer p {
+    font-size: 14px;
+  }
+
+  footer small {
+    font-size: 12px;
   }
 }
