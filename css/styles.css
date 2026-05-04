@@ -553,7 +553,8 @@ footer p a {
 
   #interests-section li {
     display: inline-block; 
-    margin: 5px 0px; 
+    margin: 5px 2px;
+    font-size: small; 
   }
 
   /* Ajuste para el HR intermedio */
