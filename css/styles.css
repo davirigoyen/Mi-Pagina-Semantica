@@ -8,7 +8,7 @@
 }
 
 ::selection {
-  background-color: #5b93fb;
+  background-color: hsla(40, 40%, 68%, 1);
   color: black;
 }
 
@@ -16,8 +16,8 @@ body {
   font-family: system-ui, Arial, sans-serif;
   margin: 0;           
   padding: 26px;       
-  color: #232629;
-  background-color: #c0aaa6;
+  color: hsla(45, 20%, 40%, 1);
+  background-color: hsla(20, 25%, 60%, 0.20);
 }
 
 /* =========================================
@@ -34,16 +34,17 @@ h1 {
   margin: 0 auto;
   margin-top: 0.5rem;
   padding: 2% 2%;
-  border: 5px solid rgb(92, 69, 69);
-  border-radius: 10px;
-  background-color: rgb(224, 214, 203);
+  border: 5px solid hsla(40, 60%, 0%, 0.2);
+  border-radius: 8px;
+  background-color: hsla(40, 45%, 65%, 0.4);
   font-size: 300%;
   font-weight: bold;
   transition: 1.3s;
+  color: hsla(40, 40%, 45%, 1);
 }
 
 h1:hover {
-  transform: scale(1.15);
+  transform: scale(1.07);
   text-decoration: underline;
 }
 
@@ -52,7 +53,7 @@ h3 { font-size: 1.25rem; font-weight: bold; }
 h4 { font-size: 1.1rem; font-weight: bold; }
 
 h2:hover, h3:hover, h4:hover, a:hover {
-  color: rgb(179, 86, 86);
+  color: hsla(55, 40%, 40%, 1);
 }
 
 p {
@@ -79,14 +80,13 @@ p .font-lighter {
   font-weight: normal;
 }
 
-a:link { color: #5a5e66; }
-a:visited { color: rgb(47, 61, 61); }
-a[target="_blank"] { color: rgb(179, 86, 86); }
+a:link { color: hsla(40, 40%, 40%, 1); }
+a[target="_blank"] { color: hsla(45, 20%, 40%, 1); }
 
 hr {
   width: 100%;
   border: none;
-  border-top: 2.1px solid #232629;
+  border-top: 2.1px solid hsla(45, 20%, 40%, 1);
   margin: 20px 0;
 }
 
@@ -104,22 +104,24 @@ header {
   padding: 1rem;       
   margin: 0;           
   height: 250px;
-  background-color: rgb(196, 172, 142);
-  color: #7c5d5d;
+  background-color: hsla(40, 60%, 40%, 0.1);
+  color: hsla(45, 20%, 40%, 1);
   border-radius: 3px;
-  border: 3px solid rgb(165, 146, 146);
+  border: 2px solid hsla(45, 20%, 40%, 1);
   text-align: center;
 }
 
 #subtitle {
   display: block;
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-bottom: 0.5rem;
   font-size: x-large;
   line-height: 1.2;
   font-weight: 500;
   font-style: italic;
-  transition: 1s; 
+  font-weight: bold;
+  transition: 1s;
+  color: hsla(40, 40%, 55%, 1); 
 }
 
 
@@ -150,6 +152,7 @@ nav {
   border: 2px solid gray;
   background-color: rgb(224, 214, 203);
   box-sizing: border-box;
+  color: hsla(40, 40%, 40%, 1);
 }
 
 nav ul {
@@ -158,26 +161,30 @@ nav ul {
   width: 100%;
   padding: 0;
   margin: 0;
-}
-
-.button {
-  display: inline-block;
-  margin: 0 50px 0 50px;
-  align-items: center;
-  transition: 1.6s;
-  border: 1px none rgb(179, 127, 90);
-  border-radius: 10px;
+  text-decoration-color: hsla(40, 40%, 40%, 1);
+  color: hsla(40, 40%, 40%, 1);
 }
 
 nav a {
   display: block; /* Permite que el enlace ocupe todo el espacio del <li> */
   text-decoration: none;
   font-weight: bold;
+  color: hsla(40, 40%, 40%, 1);
+}
+
+.button {
+  display: inline-block;
+  margin: 0 50px 0 50px;
+  align-items: center;
+  transition: 1.3s;
+  border: 1px none hsla(45, 20%, 40%, 1);
+  border-radius: 3px;
+  color: hsla(40, 40%, 40%, 1);
 }
 
 .button:hover {
   text-decoration: underline;
-  background-color: rgb(179, 127, 90);
+  background-color: hsla(40, 40%, 40%, 0.3);
 }
 
 /* --- CONTENEDOR PRINCIPAL (MAIN) --- */
@@ -187,7 +194,7 @@ main {
   max-width: 1600px;
   height: auto;     
   margin: 0;
-  background-color: #c0aaa6;
+  background-color: hsla(20, 25%, 60%, 0.1);
   text-align: center;
 }
 
@@ -199,8 +206,8 @@ main {
   width: 73%; 
   height: auto;
   min-height: 450px;
-  background-color: rgb(177, 154, 130);
-  border-radius: 6px;
+  background-color: hsla(40, 45%, 65%, 0.4);
+  border-radius: 3px;
   border: 2px solid gray;
   padding: 1rem;
   box-sizing: border-box;
@@ -219,12 +226,14 @@ main {
 
 #about-me-article h2 {
   padding: 0rem;
-  transition: 1.8s;
+  transition: 1.2s;
   font-size: 200%;
+  color: hsla(40, 75%, 20%, 0.7);
 }
 
 #about-me-article h2:hover {
-  font-style: italic;
+  font-style: bolder;
+  color: hsla(55, 40%, 40%, 1);
 }
 
 article h2::after {
@@ -237,21 +246,21 @@ article h2::after {
   padding: 0;
   width: 9rem;
   height: 9rem;
-  border: 2px solid rgb(148, 135, 91);
-  border-radius: 12px;
+  border: 2px solid hsla(45, 20%, 40%, 1);
+  border-radius: 4px;
   transition: 1s;
 }
 
 #foto-perfil:hover {
-  transform: scale(1.15);
+  transform: scale(1.07);
 }
 
 #paragraph {
   margin: 0.3rem;
   line-height: 1.30;
   text-align: justify;
-  color: rgb(33, 48, 48);
-  font-size: larger;
+  color: hsla(35, 40%, 30%, 0.9);
+  font-size: 115%;
 }
 
 #paragraph::first-letter {
@@ -264,18 +273,19 @@ article h2::after {
   margin: 0.3rem;
   line-height: 1.30;
   text-align: justify;
-  color: rgb(33, 48, 48);
+  color: hsla(35, 40%, 30%, 0.9);
   font-weight: normal;
-  font-size:medium;
+  font-size: 108%;
 }
 
 /* --- SECTION: Interests --- */
 
 #interests-section {
+  display: inline-block;
   background-color: rgb(224, 214, 203);
   width: 80%;
   margin: 0 auto;
-  border: 2px solid gray;
+  border: 2px solid hsla(45, 20%, 40%, 1);
   padding: 10px 10px 30px;
   padding-bottom: 30px;
   box-sizing: border-box;
@@ -283,18 +293,22 @@ article h2::after {
 }
 
 #interests-section h3 {
+  display: inline-block;
   padding: 0;
-  width: 100%;
+  width: auto;
   margin: 0 auto;
-  margin-top: 20px; 
-  transition: 1.5s;
-  color: darkolivegreen;
+  margin-top: 20px;
+  color: hsla(40, 40%, 40%, 1);
+  border: 0 auto;
   transition: 1s;
-  text-decoration: underline;
 }
 
 #interests-section h3:hover {
-  transform: scale(120%);
+  display: inline-block;
+  border-style: dashed;
+  border-radius: 3px;
+  border-color:  hsla(40, 40%, 40%, 1);
+  background-color: hsla(40, 40%, 40%, 0.25);
 }
 
 #interests-section ul {
@@ -308,7 +322,8 @@ article h2::after {
   display:inline-block;
   margin: 20px 100px 5px 100px;
   padding: 0;
-  font-weight: 600;
+  font-weight: bolder;
+  color: hsla(35, 40%, 30%, 1);
 }
 
 #music::before {
@@ -334,31 +349,37 @@ aside {
   min-height: 450px; 
   margin-left: 8px;
   background-color: rgb(224, 214, 203);
-  border-radius: 10px;
+  border-radius: 3px;
   padding: 16px;
-  border: 2px solid rgb(165, 146, 146);
+  border: 2px solid hsla(45, 20%, 40%, 1);
   font-size: small;
   box-sizing: border-box;
 }
 
-aside input[type="image"] {
+/*aside input[type="image"] {
   display: block;
   margin: 0 auto;
   margin-top: 40px;
   cursor: pointer;
-}
+}*/
 
 aside h2 {
-  transition: 1.8s;
+  transition: 1s;
   padding: 1rem;
+  color: hsla(40, 75%, 20%, 0.7)
 }
 
 aside h2:hover {
-  font-style: italic;
+  font-style: bolder;
 }
 
 aside h2::before {
   content: "📌";
+}
+
+aside h4 {
+  color: hsla(35, 40%, 30%, 1);
+  transition: 1s;
 }
 
 aside ul {
@@ -382,11 +403,11 @@ aside ul {
   height: 5rem;
   margin: 0 auto;
   padding: 0.6rem;
-  transition: 0.4s ease;
+  transition: 0.9s;
 }
 
 #hombreTrabajandoEnPc:hover {
-  transform: scale(1.15);
+  transform: scale(1.07);
 }
 
 /* --- FOOTER --- */
@@ -395,9 +416,9 @@ footer {
   display: block;
   padding: 16px;
   width: 100%;       
-  background-color: rgb(196, 172, 142);
+  background-color: hsla(40, 45%, 65%, 0.4);
   text-align: center;
-  color: #7c5d5d;
+  color: hsla(40, 40%, 45%, 1);
   font-size: 0.95rem;
   font-weight: bold;
   margin: 0;         
@@ -415,6 +436,11 @@ footer h2 {
 footer p {
   margin-top: 0px;
   padding-top: 0px;
+  color: hsla(40, 40%, 40%, 1);
+}
+
+footer p a {
+  color: hsla(40, 40%, 40%, 1);
 }
 
 #small {
@@ -471,7 +497,7 @@ footer p {
     width: 80%;              
     margin: 15px auto;       
     padding: 12px 0;
-    border: 1px solid rgb(179, 127, 90); 
+    border: 1px solid hsla(45, 20%, 40%, 1); 
     background-color: rgba(179, 127, 90, 0.1); 
   }
 
