@@ -1,32 +1,26 @@
-# Mi Página Personal: HTML Semántico & CSS Base 🚀
+My Personal Page: Semantic HTML & Base CSS 🚀
+This is a practice project designed to master the fundamental building blocks of web development. The main challenge consisted of building a fully responsive page using only the traditional Box Model (block and inline), without relying on modern tools like Flexbox or Grid.
 
-Este es un proyecto de práctica diseñado para dominar las bases fundamentales del desarrollo web. El desafío principal consistió en construir una página **totalmente responsive** utilizando únicamente el modelo de caja tradicional (bloque e inline), sin recurrir a herramientas modernas como Flexbox o Grid.
+🔗 Live Demo: [Visit site](https://davirigoyen.github.io/Mi-Pagina-Semantica/)
 
-🔗 **Demo en vivo:** [Visitar sitio](https://davirigoyen.github.io/Mi-Pagina-Semantica/)
+🛠️ Technologies and Applied Concepts:
 
----
+Semantic Structure (HTML5)
+Use of architecture tags: <header>, <nav>, <main>, <article>, <aside>, and <footer>.
+Implementation of <hr> for thematic breaks with semantic meaning.
 
-## 🛠️ Tecnologías y Conceptos Aplicados
+Advanced CSS (Basics)
+Traditional Layout: Intensive use of display: inline-block and vertical-align for column positioning.
+Complex Selectors: Use of attribute selectors such as a[target="_blank"] and adjacent sibling combinators (+ p).
+Pseudo-elements & Classes: Detailed styling with ::before, ::after, ::first-letter, ::first-line, and link state management.
+Responsive Design: Implementation of @media queries to adapt the column layout into a vertical structure for mobile devices.
 
-### Estructura Semántica (HTML5)
-- Uso de etiquetas de arquitectura: `<header>`, `<nav>`, `<main>`, `<article>`, `<aside>` y `<footer>`.
-- Implementación de `<hr>` para rupturas temáticas con significado semántico.
+📱 Preview
+![Screenshot of the WebPage](/img/vistaPreviaPaginaPersonalSinFlexbox.jpeg)
+Support for desktop browsers (Chrome, Firefox, Edge).
 
-### CSS Avanzado (Basics)
-- **Layout Tradicional:** Uso intensivo de `display: inline-block` y `vertical-align` para el posicionamiento de columnas.
-- **Selectores Complejos:** Uso de selectores de atributo como `a[target="_blank"]` y combinadores de adyacencia (`+ p`).
-- **Pseudo-elementos & Clases:** Estilización detallada con `::before`, `::after`, `::first-letter`, `::first-line` y manejo de estados de enlaces.
-- **Diseño Responsivo:** Implementación de `@media queries` para adaptar el layout de columnas a una estructura vertical en dispositivos móviles.
+Optimized for mobile touchscreens.
 
----
-
-## 📱 Vista Previa
-![Captura de pantalla de mi página web](/img/vistaPreviaPaginaPersonalSinFlexbox.jpeg) 
-- Soporte para navegadores de escritorio (Chrome, Firefox, Edge).
-- Optimizado para pantallas táctiles de celulares.
-
----
-
-## ⚙️ Cómo ejecutarlo
-1. Clona este repositorio o descarga el ZIP.
-2. Abre el archivo `index.html` en cualquier navegador.
+⚙️ How to Run
+Clone this repository or download the ZIP file.
+Open the index.html file in any web browser.
