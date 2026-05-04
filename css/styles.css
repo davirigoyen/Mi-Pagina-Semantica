@@ -470,7 +470,7 @@ footer p a {
   h1 {
     font-size: 2rem;
     width: 80%;
-    border: 1px solid hsla(40, 60%, 0%, 0.3);
+    border: 2px solid hsla(40, 60%, 0%, 0.3);
   }
 
   #subtitle {
