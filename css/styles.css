@@ -532,27 +532,35 @@ footer p a {
     border: 1px solid hsla(45, 20%, 40%, 1); 
     background-color: rgba(179, 127, 90, 0.1); 
   }
-
-  /* 5. Sección de Intereses */
+  
+  /* 5. Sección de Intereses - Ajuste de Precisión */
   #interests-section {
     width: 100%;
-    padding: 15px 0; /* Reducimos el padding vertical para ajustar la caja */
+    padding: 20px 0; /* Padding uniforme */
+    margin-bottom: 0; /* Quitamos el margen inferior para que mande el HR */
   }
 
   #interests-section h3 {
-    display: block; /* Problema 1: Fuerza el salto de línea para que el título quede arriba */
-    margin: 0 auto 15px auto; /* Empuja la lista hacia abajo */
+    display: block; 
+    margin: 0 auto 10px auto; 
   }
 
   #interests-section ul {
-    display: block; /* Asegura que el contenedor de la lista ocupe la línea inferior */
+    display: block; 
+    margin: 0; /* Eliminamos margen del UL que podría estar empujando el HR */
+    padding: 0;
   }
 
   #interests-section li {
-    display: inline-block; /* Problema 1: Renderiza los elementos de la lista en formato horizontal */
-    margin: 5px 10px; /* Problema 2: Reducimos este margen para que no genere tanto espacio en blanco abajo */
+    display: inline-block; 
+    margin: 5px 10px; 
   }
 
+  /* Ajuste para el HR intermedio */
+  main + hr, 
+  #interests-section + hr {
+    margin: 20px 0; /* Esto garantiza los 20px exactos */
+  }
 
   /* 6. Textos: Mejor legibilidad */
   #paragraph, #paragraph2 {
