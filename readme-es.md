@@ -21,7 +21,10 @@ Este es un proyecto de práctica diseñado para dominar las bases fundamentales 
 ---
 
 ## 📱 Vista Previa
-![Captura de pantalla de mi página web](/img/vistaPreviaPaginaPersonalSinFlexbox.jpeg) 
+<p align="center">
+  <img src="img/vistaPreviaPaginaPersonalSinFlexbox.jpeg" width="300" alt="Screenshot of the WebPage">
+</p>
+ 
 - Soporte para navegadores de escritorio (Chrome, Firefox, Edge).
 - Optimizado para pantallas táctiles de celulares.
 

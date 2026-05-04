@@ -21,7 +21,9 @@ This is a practice project designed to master the fundamental building blocks of
 ---
 
 ## 📱 Preview
-![Screenshot of the WebPage](/img/vistaPreviaPaginaPersonalSinFlexbox.jpeg)
+<p align="center">
+  <img src="img/vistaPreviaPaginaPersonalSinFlexbox.jpeg" width="300" alt="Screenshot of the WebPage">
+</p>
 
 - Support for desktop browsers (Chrome, Firefox, Edge).
 - Optimized for mobile touchscreens.
