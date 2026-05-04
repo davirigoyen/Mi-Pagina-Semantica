@@ -350,10 +350,10 @@ aside {
   vertical-align: top; 
   width: 26%; 
   height: auto;
-  min-height: 462px; 
+  min-height: 464px; 
   background-color: rgb(224, 214, 203);
   border-radius: 3px;
-  padding: 16px 16px 16px 21px ;
+  padding: 16px 16px 16px 21px;
   border: 2px solid hsla(45, 20%, 40%, 1);
   font-size: small;
   box-sizing: border-box;
@@ -471,9 +471,8 @@ footer p a {
     display: block;      
     width: 100%;        
     min-height: auto;
-    margin-top: 10px;
     margin: 0 auto;
-    padding: 0;
+    padding-top: 10px;
   }
 
   #foto-perfil {
