@@ -451,11 +451,23 @@ footer p a {
    ========================================= */
 @media (max-width: 768px) {
   
+  /* --- NORMALIZACIÓN DE ESPACIADOS VERTICALES --- */
+  /* Forzamos a que todos los bloques principales tengan exactamente 20px de 
+     separación inferior y anulamos márgenes superiores residuales. */
+  header, 
+  nav, 
+  #about-me-article, 
+  aside, 
+  #interests-section {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
   /* 1. Main y contenedor general */
   main {
     width: 100%;
     height: auto; 
-    padding: 4px 0px;
+    padding: 0; /* Reseteado a 0 para no sumar espacio extra impredecible */
     margin: 0; 
   }
 
@@ -464,15 +476,13 @@ footer p a {
     display: block;      
     width: 100%;        
     min-height: auto;   
-    margin: 0;     
   }
 
   aside {
     display: block;      
     width: 100%;        
     min-height: auto;
-    margin: 0 auto;
-    padding-top: 4px;
+    padding-top: 16px; /* Restaurado para que el borde no asfixie el contenido */
   }
 
   #foto-perfil {
@@ -485,14 +495,12 @@ footer p a {
   header {
     width: 100%;
     height: auto;
-    padding-bottom: 0;
+    padding-bottom: 1rem; /* Restaurado para mantener simetría interna del borde */
   }
-  
   
   h1 {
     font-size: 2rem;
     width: 80%;
-    border: 2px solid hsla(40, 60%, 0%, 0.3);
   }
 
   #subtitle {
@@ -502,8 +510,8 @@ footer p a {
     padding-bottom: 0;
   }
 
- #subtitle::after {
-    display: block;           
+  #subtitle::after {
+    display: block;            
     margin: 0 auto; 
     width: 105px;
     height: 105px;
@@ -512,7 +520,7 @@ footer p a {
   /* 4. Navegación: Botones en bloque (apilados) */
   nav {
     width: 100%;
-    padding: 1rem 0rem;
+    padding: 1rem 0;
   }
 
   .button {
@@ -527,7 +535,7 @@ footer p a {
   /* 5. Sección de Intereses */
   #interests-section {
     width: 100%;
-    padding: 1rem 0rem;
+    padding: 1rem 0;
   }
 
   #interests-section li {
