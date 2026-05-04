@@ -2,7 +2,7 @@
 
 This is a practice project designed to master the fundamental building blocks of web development. The main challenge consisted of building a **fully responsive** page using only the traditional Box Model (block and inline), without relying on modern tools like Flexbox or Grid.
 
-🔗 **Live Demo**: [Visit site](https://davirigoyen.github.io/Mi-Pagina-Semantica/)
+🔗 **Live Demo**: [Visit site](https://davirigoyen.github.io/My-Personal-Page-Semantic-HTML-Base-CSS/)
 
 ---
 

@@ -2,7 +2,7 @@
 
 Este es un proyecto de práctica diseñado para dominar las bases fundamentales del desarrollo web. El desafío principal consistió en construir una página **totalmente responsive** utilizando únicamente el modelo de caja tradicional (bloque e inline), sin recurrir a herramientas modernas como Flexbox o Grid.
 
-🔗 **Demo en vivo:** [Visitar sitio](https://davirigoyen.github.io/Mi-Pagina-Semantica/)
+🔗 **Demo en vivo:** [Visitar sitio](https://davirigoyen.github.io/My-Personal-Page-Semantic-HTML-Base-CSS/)
 
 ---
 
@@ -24,7 +24,7 @@ Este es un proyecto de práctica diseñado para dominar las bases fundamentales 
 <p align="center">
   <img src="img/vistaPreviaPaginaPersonalSinFlexbox.jpeg" width="300" alt="Screenshot of the WebPage">
 </p>
- 
+
 - Soporte para navegadores de escritorio (Chrome, Firefox, Edge).
 - Optimizado para pantallas táctiles de celulares.
 
