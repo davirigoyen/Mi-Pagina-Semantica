@@ -224,8 +224,7 @@ nav a {
 }
 
 .button:hover {
-  text-decoration: underline;
-  background-color: hsla(40, 40%, 40%, 0.3);
+  transform: scale(1.35);
 }
 
 /* --- CONTENEDOR PRINCIPAL (MAIN) --- */
@@ -406,18 +405,41 @@ article h2::after {
   color: hsla(35, 40%, 30%, 1);
 }
 
+#music {
+  transition: 2s;
+}
+
 #music::before {
   content: "🎶 ";
+}
+
+#music:hover {
+  transform: rotate(15deg);
+}
+
+#programming {
+  transition: 2s;
 }
 
 #programming::before {
   content: "💻 ";
 }
 
-#exersice::before {
+#programming:hover {
+  transform: rotate(-15deg);
+}
+
+#exercise {
+  transition: 2s;
+}
+
+#exercise::before {
   content: "🚴 ";
 }
 
+#exercise:hover {
+  transform: rotate(15deg);
+}
 
 /* --- ASIDE: Enlaces Útiles --- */
 
