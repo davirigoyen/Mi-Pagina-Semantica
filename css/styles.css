@@ -370,8 +370,8 @@ article h2::after {
   color: hsla(40, 40%, 40%, 1);
   border: 0px solid transparent;
   transition: 1s;
-  padding-bottom: 8px;
-  padding-top: 8px;
+  padding-bottom: 12px;
+  padding-top: 12px;
 }
 
 
@@ -379,8 +379,8 @@ article h2::after {
   text-decoration: none;
   border-top: 1px solid hsla(40, 40%, 40%, 1);
   border-bottom: 1px solid hsla(40, 40%, 40%, 1);
-  padding-bottom: 14px;
-  padding-top: 14px;
+  padding-bottom: 16px;
+  padding-top: 16px;
   border-color: hsla(40, 40%, 40%, 1);
 }
 
