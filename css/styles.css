@@ -353,8 +353,7 @@ article h2::after {
   width: 80%;
   margin: 0 auto;
   border: 2px solid transparent;
-  padding: 10px 10px 30px;
-  padding-bottom: 20px;
+  padding: 10px 20px 20px;
   box-sizing: border-box;
   text-align: center;
   transition: 1.3s;
@@ -370,7 +369,9 @@ article h2::after {
   margin: 0 auto;
   color: hsla(40, 40%, 40%, 1);
   border: 0px solid transparent;
-  transition: 1.7s;
+  transition: 1s;
+  padding-bottom: 8px;
+  padding-top: 8px;
 }
 
 
