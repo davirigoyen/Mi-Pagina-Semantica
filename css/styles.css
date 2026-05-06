@@ -568,17 +568,33 @@ footer p a {
   }
 
   #subtitle {
-    font-size: 1.2rem;
+    font-size: 1.1rem; /* Reducimos un poco más para ganar espacio */
     margin-top: 1.5rem;
-    line-height: 1;
-    padding-bottom: 0;
+    line-height: 1.2;
+    text-align: center; /* Asegura que el bloque esté centrado */
+    white-space: nowrap; /* Evita que el texto se parta en dos líneas */
+  }
+
+  #subtitle::before {
+    display: inline-block; /* Mantenemos el flujo en línea */
+    width: 22px;           /* Tamaño reducido para móvil */
+    height: 22px;
+    margin-right: 5px;    /* Menos margen */
+    vertical-align: middle;
   }
 
   #subtitle::after {
-    display: block;            
-    margin: 0 auto; 
-    width: 105px;
-    height: 105px;
+    display: inline-block; /* ¡IMPORTANTE!: Cambiado de block a inline-block */
+    width: 42px;           /* Tamaño reducido para móvil */
+    height: 42px;
+    margin-left: 5px;     /* Menos margen */
+    vertical-align: middle;
+  }
+
+  /* Evitamos que las imágenes "salgan" de la pantalla al tocarlas en el celular */
+  #subtitle:hover::before, 
+  #subtitle:hover::after {
+    transform: scale(1.2); /* Solo un pequeño aumento sin desplazamiento lateral */
   }
 
   /* 4. Navegación: Botones en bloque (apilados) */
