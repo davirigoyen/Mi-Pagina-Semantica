@@ -246,7 +246,7 @@ main {
   vertical-align: top;
   width: 73%; 
   height: auto;
-  min-height: 450px;
+  min-height: 470px;
   background-color: hsla(40, 45%, 65%, 0.4);
   border-radius: 3px;
   border: 2px solid transparent;
@@ -365,26 +365,21 @@ article h2::after {
 }
 
 #interests-section h3 {
-  display: inline-block;
-  padding: 0;
-  width: auto;
+  display: block;
+  width: fit-content;
   margin: 0 auto;
-  border: 0px solid transparent;
-  margin-top: 20px;
   color: hsla(40, 40%, 40%, 1);
-  border: 0 auto;
-  transition: 1s;
+  border: 0px solid transparent;
+  transition: 1.7s;
 }
 
 
 #interests-section h3:hover {
-  /*transform: scale(1.03);*/
-  display: inline-block;
-  text-decoration:none;
-  border-top: 1px solid hsla(40, 50%, 50%, 0.3);
-  border-bottom: 1px solid hsla(40, 50%, 50%, 0.3);
-  padding-bottom: 15px;
-  padding-top: 15px;
+  text-decoration: none;
+  border-top: 1px solid hsla(40, 40%, 40%, 1);
+  border-bottom: 1px solid hsla(40, 40%, 40%, 1);
+  padding-bottom: 14px;
+  padding-top: 14px;
   border-color: hsla(40, 40%, 40%, 1);
 }
 
@@ -448,7 +443,7 @@ aside {
   vertical-align: top; 
   width: 26%; 
   height: auto;
-  min-height: 464px; 
+  min-height: 470px; 
   background-color: rgb(224, 214, 203);
   border-radius: 3px;
   padding: 16px 16px 16px 21px;
