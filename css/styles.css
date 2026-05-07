@@ -456,10 +456,14 @@ aside:hover {
 aside h2 {
   transition: 1s;
   padding: 1rem;
+  max-width: 70%;
   border: 0px solid transparent;
   color: hsla(40, 40%, 45%, 1);
   font-size: 200%;
   font-weight: 600;
+  margin: 0 auto;
+  margin-bottom: 25px;
+  margin-top: 10px;
 }
 
 aside h2:hover {
@@ -480,8 +484,15 @@ aside h4 {
 }
 
 aside ul {
-  margin: 0;
-  padding:0.5rem; 
+  margin: 0 auto;
+  padding:0.5rem;
+  margin-bottom: 12px;
+  margin-top: 10px; 
+}
+
+aside ul li {
+  margin-top: 9px;
+  margin-bottom: 9px;
 }
 
 .visitar-sitio {
@@ -527,6 +538,7 @@ footer h2 {
   font-weight: bolder;
   padding-top: 0px;
   margin-top: 0px;
+  color: hsla(40, 40%, 45%, 1);
 }
 
 footer p {
