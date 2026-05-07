@@ -633,8 +633,8 @@ footer p a {
   #subtitle::before {
     user-select: none;
     display: inline-block; /* Mantenemos el flujo en línea */
-    width: 22px;           /* Tamaño reducido para móvil */
-    height: 22px;
+    width: 25px;           /* Tamaño reducido para móvil */
+    height: 25px;
     margin-right: 5px;    /* Menos margen */
     vertical-align: middle;
   }
@@ -642,8 +642,8 @@ footer p a {
   #subtitle::after {
     user-select: none;
     display: inline-block; /* ¡IMPORTANTE!: Cambiado de block a inline-block */
-    width: 42px;           /* Tamaño reducido para móvil */
-    height: 42px;
+    width: 48px;           /* Tamaño reducido para móvil */
+    height: 48px;
     margin-left: 5px;     /* Menos margen */
     vertical-align: middle;
   }
@@ -652,7 +652,7 @@ footer p a {
   #subtitle:hover::before, 
   #subtitle:hover::after {
     user-select: none;
-    transform: scale(1.2); /* Solo un pequeño aumento sin desplazamiento lateral */
+    /*transform: scale(1.2);*/ /* Solo un pequeño aumento sin desplazamiento lateral */
   }
 
   /* 4. Navegación: Botones en bloque (apilados) */
@@ -739,7 +739,7 @@ footer p a {
     display: block;
     margin-top: 1rem;
     margin-bottom: 0.5rem;
-    font-size: 4rem;
+    font-size: 1rem;
     line-height: 1.2;
     font-weight: 500;
     font-style: italic;
@@ -768,7 +768,7 @@ footer p a {
   #subtitle:hover::after {
     user-select: none;
     filter: black(65%) saturate(1) hue-rotate(2deg) brightness(0.7) contrast(1.5);
-    transform: translateX(100px) translateY(-60px) scale(1.9);    
+    /*transform: translateX(100px) translateY(-60px) scale(1.9);*/    
   }
 
   #subtitle::before {
@@ -790,7 +790,7 @@ footer p a {
   #subtitle:hover::before {
     user-select: none;
     filter: sepia(20%) saturate(1) hue-rotate(2deg) brightness(0.8) contrast(1.1);
-    transform: translateX(-100px) translateY(-60px) scale(1.9);
+    /*transform: translateX(-100px) translateY(-60px) scale(1.9);*/
   }
 
   Nav {
@@ -835,7 +835,7 @@ footer p a {
   #subtitle:hover::before, 
   #subtitle:hover::after {
     user-select: none;
-    transform: none; /* Solo un pequeño aumento sin desplazamiento lateral */
+    /*transform: none;*/ /* Solo un pequeño aumento sin desplazamiento lateral */
   }
 
   Nav {
@@ -879,7 +879,7 @@ footer p a {
 
   #about-me-article h2:hover::after {
     user-select: none;
-    transform: translateX(120px) translateY(107px) scale(3);
+    /*transform: translateX(120px) translateY(107px) scale(3);*/
   }
 
   aside {
@@ -897,7 +897,7 @@ footer p a {
 
 #hombreTrabajandoEnPc:hover {
   user-select: none;
-  transform: scale(1.07);
+  /*transform: scale(1.07);*/
 }
 
 
@@ -953,7 +953,7 @@ footer p a {
   #subtitle:hover::before, 
   #subtitle:hover::after {
     user-select: none;
-    transform: scale(1.2); /* Solo un pequeño aumento sin desplazamiento lateral */
+    /*transform: scale(1.2);*/ /* Solo un pequeño aumento sin desplazamiento lateral */
   }
 
   /* 4. Navegación: Botones en bloque (apilados) */
@@ -1030,3 +1030,28 @@ footer p a {
     font-size: 12px;
   }
 }
+
+  /*SURFACE DUO*/
+
+  @media (max-width: 600px) {
+  /* Ajuste del Subtítulo */
+  #subtitle {
+    font-size: 1.3rem; /* Bajamos el tamaño para que no "explote" */
+    line-height: 1.2;
+    margin-top: 1rem;
+    display: block;
+    text-align: center;
+  }
+
+  /* SVG Before y After (Ajuste de escala) */
+  #subtitle::before,
+  #subtitle::after {
+    display: block; /* Los ponemos uno sobre otro para que no empujen el texto hacia los lados */
+    width: 60px;    /* Un tamaño mucho más controlado */
+    height: 60px;
+    margin: 10px auto; /* Centrado horizontal y respiro vertical */
+    content: "";    /* Asegúrate de que el content esté definido si usas imágenes de fondo */
+  }
+}
+
+
