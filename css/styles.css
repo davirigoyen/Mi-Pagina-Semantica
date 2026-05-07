@@ -36,7 +36,7 @@ h1 {
   border: 0px solid transparent;
   border-radius: 6px;
   background-color: hsla(40, 50%, 50%, 0.3);
-  font-size: 260%;
+  font-size: 2.5rem;
   font-weight:600;
   transition: 1.3s;
   color: hsla(40, 40%, 45%, 1);
@@ -66,12 +66,12 @@ p {
 }
 
 p + p {
-  font-size: 18px;
+  font-size: 1.1rem;
   font-weight: bolder;
 }
 
 p::first-line {
-  font-size: 110%;
+  font-size: 1.20rem;
   font-weight: bold;
 }
 
@@ -125,7 +125,7 @@ header:hover {
   display: block;
   margin-top: 1rem;
   margin-bottom: 0.5rem;
-  font-size: x-large;
+  font-size: 1.65rem;
   line-height: 1.2;
   font-style: italic;
   font-weight: bold;
@@ -273,7 +273,7 @@ main {
   margin-bottom: 1.9rem;
   border: 0px solid transparent;
   transition: 1.2s;
-  font-size: 170%;
+  font-size: 2rem;
   font-weight: 600;
   color: hsla(40, 40%, 45%, 1);
 }
@@ -322,11 +322,11 @@ article h2::after {
   line-height: 1.30;
   text-align: justify;
   color: hsla(35, 40%, 30%, 0.9);
-  font-size: 115%;
+  font-size: 1.15rem;
 }
 
 #paragraph::first-letter {
-  font-size: 150%;
+  font-size: 1.8rem;
   font-weight: bold;
   margin-right: 0px;
 }
@@ -337,7 +337,7 @@ article h2::after {
   text-align: justify;
   color: hsla(35, 40%, 30%, 0.9);
   font-weight: normal;
-  font-size: 108%;
+  font-size: 1rem;
 }
 
 /* --- SECTION: Interests --- */
@@ -444,7 +444,7 @@ aside {
   border-radius: 3px;
   padding: 16px 16px 16px 21px;
   border: 2px solid transparent;
-  font-size: small;
+  font-size: 0.90rem;
   box-sizing: border-box;
   transition: 2s;
 }
@@ -456,10 +456,10 @@ aside:hover {
 aside h2 {
   transition: 1s;
   padding: 1rem;
-  max-width: 70%;
+  max-width: 90%;
   border: 0px solid transparent;
   color: hsla(40, 40%, 45%, 1);
-  font-size: 200%;
+  font-size: 1.85rem;
   font-weight: 600;
   margin: 0 auto;
   margin-bottom: 25px;
@@ -497,7 +497,7 @@ aside ul li {
 
 .visitar-sitio {
   box-sizing: border-box;
-  font-size: medium;
+  font-size: 1.rem;
 }
 
 .visitar-sitio::after {
