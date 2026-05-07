@@ -7,6 +7,10 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 100%;
+}
+
 ::selection {
   background-color: hsla(40, 40%, 68%, 1);
   color: black;
@@ -126,7 +130,6 @@ header:hover {
   margin-top: 1rem;
   margin-bottom: 0.5rem;
   font-size: 1.65rem;
-  line-height: 1.2;
   font-style: italic;
   font-weight: bold;
   transition: 1s;
@@ -603,7 +606,6 @@ footer p a {
   #subtitle {
     display: block;
     font-size: 1rem;
-    line-height: 1.35;
     margin-top: 0.75rem;
     margin-bottom: 0.5rem;
     white-space: normal;
@@ -754,7 +756,6 @@ footer p a {
 
   #subtitle {
     font-size: 1rem;
-    line-height: 1.25;
     margin-top: 1rem;
     margin-bottom: 0.5rem;
     white-space: normal;
@@ -864,7 +865,6 @@ footer p a {
 
   #subtitle {
     font-size: 1rem;
-    line-height: 1.2;
     white-space: nowrap;
     text-align: center;
   }
