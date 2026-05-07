@@ -613,6 +613,7 @@ footer p a {
   }
   
   h1 {
+    user-select: none;
     font-size: 2rem;
     width: 80%;
   }
@@ -626,6 +627,7 @@ footer p a {
   }
 
   #subtitle::before {
+    user-select: none;
     display: inline-block; /* Mantenemos el flujo en línea */
     width: 22px;           /* Tamaño reducido para móvil */
     height: 22px;
@@ -634,6 +636,7 @@ footer p a {
   }
 
   #subtitle::after {
+    user-select: none;
     display: inline-block; /* ¡IMPORTANTE!: Cambiado de block a inline-block */
     width: 42px;           /* Tamaño reducido para móvil */
     height: 42px;
@@ -644,6 +647,7 @@ footer p a {
   /* Evitamos que las imágenes "salgan" de la pantalla al tocarlas en el celular */
   #subtitle:hover::before, 
   #subtitle:hover::after {
+    user-select: none;
     transform: scale(1.2); /* Solo un pequeño aumento sin desplazamiento lateral */
   }
 
@@ -654,6 +658,7 @@ footer p a {
   }
 
   .button {
+    user-select: none;
     display: block;          
     width: 60%;              
     margin: 10px auto;       
@@ -671,17 +676,20 @@ footer p a {
   }
 
   #interests-section h3 {
+    user-select: none;
     display: block; 
     margin: 0 auto 10px auto; 
   }
 
   #interests-section ul {
+    user-select: none;
     display: block; 
     margin: 0; /* Eliminamos margen del UL que podría estar empujando el HR */
     padding-top: 7px;
   }
 
   #interests-section li {
+  user-select: none;
   display: inline-block; 
   margin: 7px 9px;   /* Un poco más de aire entre palabras */
   font-size: 15px;   /* Pequeño, pero legible */
@@ -704,6 +712,7 @@ footer p a {
   /* 7. Footer */
 
   footer h2 {
+    user-select: none;
     font-size: 22px;
   }
 
@@ -721,6 +730,7 @@ footer p a {
 @media (max-width: 1024px) {
  
   #subtitle {
+  user-select: none;
   display: block;
   margin-top: 1rem;
   margin-bottom: 0.5rem;
@@ -735,6 +745,7 @@ footer p a {
 }
 
 #subtitle::after {
+  user-select: none;
   content: ""; 
   display: inline-block;
   width: 90px; 
@@ -750,11 +761,13 @@ footer p a {
 }
 
 #subtitle:hover::after {
+    user-select: none;
     filter: black(65%) saturate(1) hue-rotate(2deg) brightness(0.7) contrast(1.5);
     transform: translateX(100px) translateY(-60px) scale(1.9);    
 }
 
 #subtitle::before {
+  user-select: none;
   content: ""; 
   display: inline-block;
   width: 45px; 
@@ -770,8 +783,9 @@ footer p a {
 }
 
 #subtitle:hover::before {
-    filter: sepia(20%) saturate(1) hue-rotate(2deg) brightness(0.8) contrast(1.1);
-    transform: translateX(-100px) translateY(-60px) scale(1.9);
+  user-select: none;
+  filter: sepia(20%) saturate(1) hue-rotate(2deg) brightness(0.8) contrast(1.1);
+  transform: translateX(-100px) translateY(-60px) scale(1.9);
 }
 }
 
@@ -780,12 +794,14 @@ footer p a {
 @media (max-width: 480px) { /* Un punto de quiebre más específico para móviles */
   
   #subtitle {
+    user-select: none;
     font-size: 0.9rem; /* Bajamos de 1.2rem o lo que tengas a algo más compacto */
     line-height: 1;
     padding: 0 10px;   /* Un poco de aire a los costados para que no toque los bordes */
   }
 
   #subtitle::before {
+    user-select: none;
     display: inline-block; /* Mantenemos el flujo en línea */
     width: 14px;           /* Tamaño reducido para móvil */
     height: 14px;
@@ -794,6 +810,7 @@ footer p a {
   }
 
   #subtitle::after {
+    user-select: none;
     display: inline-block; /* ¡IMPORTANTE!: Cambiado de block a inline-block */
     width: 30px;           /* Tamaño reducido para móvil */
     height: 30px;
@@ -804,6 +821,7 @@ footer p a {
   /* Evitamos que las imágenes "salgan" de la pantalla al tocarlas en el celular */
   #subtitle:hover::before, 
   #subtitle:hover::after {
+    user-select: none;
     transform: none; /* Solo un pequeño aumento sin desplazamiento lateral */
   }
 
@@ -840,6 +858,7 @@ footer p a {
   }
 
   #about-me-article h2:hover::after {
+    user-select: none;
     transform: translateX(120px) translateY(107px) scale(3);
   }
 
@@ -851,16 +870,19 @@ footer p a {
   }
 
   aside h2 {
+    user-select: none;
     margin-top: 8px;
     padding-top: 8px;
   }
 
 #hombreTrabajandoEnPc:hover {
+  user-select: none;
   transform: scale(1.07);
 }
 
 
   #foto-perfil {
+    user-select: none;
     width: 30%;
     height: auto;
     margin: 0 auto;
@@ -875,11 +897,13 @@ footer p a {
   }
   
   h1 {
+    user-select: none;
     font-size: 2rem;
     width: 80%;
   }
 
   #subtitle {
+    user-select: none;
     font-size: 1.1rem; /* Reducimos un poco más para ganar espacio */
     margin-top: 1.5rem;
     line-height: 1.2;
@@ -888,6 +912,7 @@ footer p a {
   }
 
   #subtitle::before {
+    user-select: none;
     display: inline-block; /* Mantenemos el flujo en línea */
     width: 22px;           /* Tamaño reducido para móvil */
     height: 22px;
@@ -896,6 +921,7 @@ footer p a {
   }
 
   #subtitle::after {
+    user-select: none;
     display: inline-block; /* ¡IMPORTANTE!: Cambiado de block a inline-block */
     width: 42px;           /* Tamaño reducido para móvil */
     height: 42px;
@@ -906,6 +932,7 @@ footer p a {
   /* Evitamos que las imágenes "salgan" de la pantalla al tocarlas en el celular */
   #subtitle:hover::before, 
   #subtitle:hover::after {
+    user-select: none;
     transform: scale(1.2); /* Solo un pequeño aumento sin desplazamiento lateral */
   }
 
@@ -916,6 +943,7 @@ footer p a {
   }
 
   .button {
+    user-select: none;
     display: block;          
     width: 60%;              
     margin: 10px auto;       
@@ -933,17 +961,20 @@ footer p a {
   }
 
   #interests-section h3 {
+    user-select: none;
     display: block; 
     margin: 0 auto 10px auto; 
   }
 
   #interests-section ul {
+    user-select: none;
     display: block; 
     margin: 0; /* Eliminamos margen del UL que podría estar empujando el HR */
     padding-top: 7px;
   }
 
   #interests-section li {
+  user-select: none;
   display: inline-block; 
   margin: 7px 9px;   /* Un poco más de aire entre palabras */
   font-size: 15px;   /* Pequeño, pero legible */
@@ -966,6 +997,7 @@ footer p a {
   /* 7. Footer */
 
   footer h2 {
+    user-select: none;
     font-size: 22px;
   }
 
