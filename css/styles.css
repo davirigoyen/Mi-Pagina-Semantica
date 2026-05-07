@@ -578,6 +578,7 @@ footer p a {
   }
 
   #about-me-article h2:hover::after {
+    user-select: none;
     transform: none; /* Esto apaga por completo la traslación y la escala */
   }
 
@@ -594,11 +595,13 @@ footer p a {
   }
 
 #hombreTrabajandoEnPc:hover {
+  user-select: none;
   transform: none;
 }
 
 
   #foto-perfil {
+    user-select: none;
     width: 30%;
     height: auto;
     margin: 0 auto;
@@ -619,6 +622,7 @@ footer p a {
   }
 
   #subtitle {
+    user-select: none;
     font-size: 1.1rem; /* Reducimos un poco más para ganar espacio */
     margin-top: 1.5rem;
     line-height: 1.2;
